@@ -10,8 +10,10 @@ struct articolo {
 };
 typedef struct articolo Articolo;
 
+void articolo_init(Articolo *pa);
 void articolo_set_title(Articolo *pa, char title[]);
 void articolo_set_text(Articolo *pa, char text[]);
 void articolo_print(Articolo *pa);
+void articolo_copy(Articolo *dst, Articolo *src);
 
 #endif
